@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Manjari:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <aside>
+        <nav>
+            <img src="profile.jpg" alt="">
+            <a href="#home"><i class="material-icons">home</i>
+                <p>Home</p>
+            </a>
+            <a href="#about"><i class="material-icons">person</i>
+                <p>About</p>
+            </a>
+            <a href="#folio"><i class="material-icons">image</i>
+                <p>Portfolio</p>
+            </a>
+            <a href="#contact"><i class="material-icons">mail</i>
+                <p>Contact</p>
+            </a>
+
+        </nav>
+    </aside>
+    <div class="sidenav">
+        <a href="#" class='close'><i class="fa fa-times"></i></a>
+
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#folio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <main>
+         <a href="#" class='open'><i class="fa fa-bars"></i></a>
+        <header class="home" id="home"><br><br>
+            <h1>Hello, I'm ...</h1>
+            <h5>Web Designer // Developer</h5>
+            <img src="profile.jpg" alt="">
+
+        </header>
+    </main>
+    <section class="about" id="about">
+
+        <h2>About me</h2>
+        <p>
+            <span style='color: orangered;'>Hello, I'm ... </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem quasi aut cum vitae, officia cumque est cupiditate architecto perspiciatis libero laborum rerum. Voluptatibus quasi odit delectus magni repellat iure doloremque minima hic minus, cumque consectetur! Placeat ad aliquid ipsa odit rem eveniet dicta! Blanditiis laborum ullam dolores, modi sit.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati, nostrum sequi culpa eligendi error omnis at aut rem quasi aperiam odio illo in repellat voluptatibus. Quaerat aperiam doloremque culpa.</p>
+        <h3>My Skills</h3>
+        <p>HTML 5</p>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+        <p>CSS 3</p>
+        <div class="container">
+            <div class="skills css">85%</div>
+        </div>
+        <p>Javascript</p>
+        <div class="container">
+            <div class="skills script">80%</div>
+        </div>
+        <p>JQuery</p>
+        <div class="container">
+            <div class="skills jquery">75%</div>
+        </div>
+    </section>
+    <section class="folio" id='folio'>
+
+        <h2>Portfolio</h2>
+        <div class="row-halves">
+
+            <div class="col">
+
+                <img src="profile.jpg" alt="">
+                <h3>Business</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odio consequuntur labore eveniet debitis dolore repellat deserunt aliquam atque corrupti.</p>
+
+            </div>
+            <div class="col">
+
+                <img src="profile.jpg" alt="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odio consequuntur labore eveniet debitis dolore repellat deserunt aliquam atque corrupti.</p>
+
+            </div>
+            <div class="col">
+
+                <img src="profile.jpg" alt="">
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odio consequuntur labore eveniet debitis dolore repellat deserunt aliquam atque corrupti.</p>
+
+            </div>
+            <div class="col">
+
+                <img src="profile.jpg" alt="">
+                <h3>Responsive Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla odio consequuntur labore eveniet debitis dolore repellat deserunt aliquam atque corrupti.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="contact" id='contact'>
+
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id='name' name='name'>
+                <label for="email">E-mail</label>
+                <input type="text" id='email' name='email'>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" style='height:200px;'></textarea>
+                <button type='submit'>submit<i class="fa fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+    <footer>
+
+        
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+           
+            <a href="#"><i class="fa fa-github"></i></a>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+    
+        $(document).ready(function () {
+
+   
+    $('.open i').click(function (){
+
+        $('.sidenav').css('transform', 'translateX(0)');
+
+    });
+    
+     $('.close i').click(function (){
+
+        $('.sidenav').css('transform', 'translateX(-100%)');
+
+    });
+
+
+
+});
+
+        
+    </script>
+</body>
+
+</html>
